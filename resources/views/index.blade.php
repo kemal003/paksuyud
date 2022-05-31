@@ -180,6 +180,18 @@
                             </div>
 
                             <div class="main_portfolio_content">
+                                @forelse ($items as $item)
+                                <div class="col-md-3 col-sm-4 col-xs-6 single_portfolio_text">
+                                    <img src="{{ asset($item->img_url) }}" alt="" />
+                                    <div class="portfolio_images_overlay text-center">
+                                        <h6>{{ $item->name}}</h6>
+                                        <p class="product_price">{{ 'Rp.'.$item->price }}</p>
+                                        <a href="" class="btn btn-primary">Click here</a>
+                                    </div>
+                                </div>
+                                @empty
+                                    <h1>nothing available</h1>
+                                @endforelse
                                 <div class="col-md-3 col-sm-4 col-xs-6 single_portfolio_text">
                                     <img src="{{ asset('images/p1.png') }}" alt="" />
                                     <div class="portfolio_images_overlay text-center">
@@ -230,14 +242,6 @@
                                 </div>
                                 <div class="col-md-3 col-sm-4 col-xs-6 single_portfolio_text">
                                     <img src="{{ asset('images/p7.png') }}" alt="" />
-                                    <div class="portfolio_images_overlay text-center">
-                                        <h6>Italian Source Mushroom</h6>
-                                        <p class="product_price">$12</p>
-                                        <a href="" class="btn btn-primary">Click here</a>
-                                    </div>								
-                                </div>
-                                <div class="col-md-3 col-sm-4 col-xs-6 single_portfolio_text">
-                                    <img src="{{ asset('images/p8.png') }}" alt="" />
                                     <div class="portfolio_images_overlay text-center">
                                         <h6>Italian Source Mushroom</h6>
                                         <p class="product_price">$12</p>
