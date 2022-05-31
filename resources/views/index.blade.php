@@ -181,7 +181,7 @@
 
                             <div class="main_portfolio_content">
                                 @forelse ($items as $item)
-                                <div class="col-md-3 col-sm-4 col-xs-6 single_portfolio_text">
+                                <div class="single_portfolio_text">
                                     <img src="{{ asset($item->img_url) }}" alt="" />
                                     <div class="portfolio_images_overlay text-center">
                                         <h6>{{ $item->name}}</h6>
@@ -192,62 +192,6 @@
                                 @empty
                                     <h1>nothing available</h1>
                                 @endforelse
-                                <div class="col-md-3 col-sm-4 col-xs-6 single_portfolio_text">
-                                    <img src="{{ asset('images/p1.png') }}" alt="" />
-                                    <div class="portfolio_images_overlay text-center">
-                                        <h6>Italian Source Mushroom</h6>
-                                        <p class="product_price">$12</p>
-                                        <a href="" class="btn btn-primary">Click here</a>
-                                    </div>
-                                </div>
-                                <div class="col-md-3 col-sm-4 col-xs-6 single_portfolio_text">
-                                    <img src="{{ asset('images/p2.png') }}" alt="" />
-                                    <div class="portfolio_images_overlay text-center">
-                                        <h6>Italian Source Mushroom</h6>
-                                        <p class="product_price">$12</p>
-                                        <a href="" class="btn btn-primary">Click here</a>
-                                    </div>								
-                                </div>
-                                <div class="col-md-3 col-sm-4 col-xs-6 single_portfolio_text">
-                                    <img src="{{ asset('images/p3.png') }}" alt="" />
-                                    <div class="portfolio_images_overlay text-center">
-                                        <h6>Italian Source Mushroom</h6>
-                                        <p class="product_price">$12</p>
-                                        <a href="" class="btn btn-primary">Click here</a>
-                                    </div>								
-                                </div>
-                                <div class="col-md-3 col-sm-4 col-xs-6 single_portfolio_text">
-                                    <img src="{{ asset('images/p4.png') }}" alt="" />
-                                    <div class="portfolio_images_overlay text-center">
-                                        <h6>Italian Source Mushroom</h6>
-                                        <p class="product_price">$12</p>
-                                        <a href="" class="btn btn-primary">Click here</a>
-                                    </div>								
-                                </div>
-                                <div class="col-md-3 col-sm-4 col-xs-6 single_portfolio_text">
-                                    <img src="{{ asset('images/p5.png') }}" alt="" />
-                                    <div class="portfolio_images_overlay text-center">
-                                        <h6>Italian Source Mushroom</h6>
-                                        <p class="product_price">$12</p>
-                                        <a href="" class="btn btn-primary">Click here</a>
-                                    </div>								
-                                </div>
-                                <div class="col-md-3 col-sm-4 col-xs-6 single_portfolio_text">
-                                    <img src="{{ asset('images/p6.png') }}" alt="" />
-                                    <div class="portfolio_images_overlay text-center">
-                                        <h6>Italian Source Mushroom</h6>
-                                        <p class="product_price">$12</p>
-                                        <a href="" class="btn btn-primary">Click here</a>
-                                    </div>								
-                                </div>
-                                <div class="col-md-3 col-sm-4 col-xs-6 single_portfolio_text">
-                                    <img src="{{ asset('images/p7.png') }}" alt="" />
-                                    <div class="portfolio_images_overlay text-center">
-                                        <h6>Italian Source Mushroom</h6>
-                                        <p class="product_price">$12</p>
-                                        <a href="" class="btn btn-primary">Click here</a>
-                                    </div>								
-                                </div>
                             </div>
                         </div>
                     </div>
