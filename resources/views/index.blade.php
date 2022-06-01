@@ -1,4 +1,5 @@
 <!doctype html>
+
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -7,22 +8,22 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-        <link rel="stylesheet" href="{{ secure_asset('css/bootstrap.min.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
         <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="{{ secure_asset('css/font-awesome.min.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/font-awesome.min.css') }}">
 
 
         <!--For Plugins external css-->
-        <link rel="stylesheet" href="{{ secure_asset('css/animate/animate.css') }}" />
-        <link rel="stylesheet" href="{{ secure_asset('css/plugins.css') }}" />
+        <link rel="stylesheet" href="{{ asset('css/animate/animate.css') }}" />
+        <link rel="stylesheet" href="{{ asset('css/plugins.css') }}" />
 
         <!--Theme custom css -->
-        <link rel="stylesheet" href="{{ secure_asset('css/style.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 
         <!--Theme Responsive css-->
-        <link rel="stylesheet" href="{{ secure_asset('css/responsive.css') }}" />
+        <link rel="stylesheet" href="{{ asset('css/responsive.css') }}" />
 
-        <script src="{{ secure_asset('js/vendor/modernizr-2.8.3-respond-1.4.2.min.js') }}"></script>
+        <script src="{{ asset('js/vendor/modernizr-2.8.3-respond-1.4.2.min.js') }}"></script>
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -72,12 +73,11 @@
                                         <span class="icon-bar"></span>
                                         <span class="icon-bar"></span>
                                     </button>
-                                    <a class="navbar-brand our_logo" href="#"><img src="{{ secure_asset('images/logo.png') }}" alt="" /></a>
                                 </div>
 
                                 <!-- Collect the nav links, forms, and other content for toggling -->
                                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-
+                                    <h1 style="display: inline">Pak Suyud</h1>
                                     <ul class="nav navbar-nav navbar-right">
                                         <li><a href="#slider">Home</a></li>
                                         <li><a href="#abouts">Menu</a></li>
@@ -120,7 +120,7 @@
                     <div class="abouts_content">
                         <div class="col-md-6">
                             <div class="single_abouts_text text-center wow slideInLeft" data-wow-duration="1s">
-                                <img src="{{ secure_asset('images/ab.png') }}" alt="" />
+                                <img src="{{ asset('images/ab.png') }}" alt="" />
                             </div>
                         </div>
 
@@ -178,7 +178,7 @@
                             <div class="main_portfolio_content">
                                 @forelse ($items as $item)
                                 <div class="single_portfolio_text">
-                                    <img src="{{ secure_asset($item->img_url) }}" alt="" />
+                                    <img src="{{ asset($item->img_url) }}" alt="" />
                                     <div class="portfolio_images_overlay text-center">
                                         <h6>{{ $item->name}}</h6>
                                         <p class="product_price">{{ 'Rp.'.$item->price }}</p>
@@ -268,15 +268,15 @@
                     <div class="row">
                         <div class="main_mobail_apps_content wow zoomIn">
                             <div class="col-md-5 col-sm-12 text-center">
-                                <img src="{{ secure_asset('images/iphone.png') }}" alt="" />
+                                <img src="{{ asset('images/iphone.png') }}" alt="" />
                             </div>
                             <div class="col-md-7 col-sm-12">
                                 <div class="single_monail_apps_text">
                                     <h4> Happy to Announce </h4>
                                     <h1>Mobile App <span>is Available in every OS platform.</span></h1>
 
-                                    <a href=""><img src="{{ secure_asset('images/google.png') }}" alt="" /></a>
-                                    <a href=""><img src="{{ secure_asset('images/apps.png') }}" alt="" /></a>
+                                    <a href=""><img src="{{ asset('images/google.png') }}" alt="" /></a>
+                                    <a href=""><img src="{{ asset('images/apps.png') }}" alt="" /></a>
                                 </div>
                             </div>
                         </div>
@@ -383,12 +383,12 @@
 		</div>		
 
 
-        <script src="{{ secure_asset('js/vendor/jquery-1.11.2.min.js') }}"></script>
-        <script src="{{ secure_asset('js/vendor/bootstrap.min.js') }}"></script>
+        <script src="{{ asset('js/vendor/jquery-1.11.2.min.js') }}"></script>
+        <script src="{{ asset('js/vendor/bootstrap.min.js') }}"></script>
 
-        <script src="{{ secure_asset('js/jquery-easing/jquery.easing.1.3.js') }}"></script>
-        <script src="{{ secure_asset('js/wow/wow.min.js') }}"></script>
-        <script src="{{ secure_asset('js/plugins.js') }}"></script>
-        <script src="{{ secure_asset('js/main.js') }}"></script>
+        <script src="{{ asset('js/jquery-easing/jquery.easing.1.3.js') }}"></script>
+        <script src="{{ asset('js/wow/wow.min.js') }}"></script>
+        <script src="{{ asset('js/plugins.js') }}"></script>
+        <script src="{{ asset('js/main.js') }}"></script>
     </body>
 </html>
