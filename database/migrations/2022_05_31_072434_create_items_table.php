@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('name');
             $table->string('img_url');
             $table->string('price');
+            $table->string('category');
             $table->boolean('available');
             $table->string('desc');
         });
