@@ -615,17 +615,46 @@ a.navbar-brand.our_logo{
 }
 
 .main_menu_bg{
-	background:rgba(0, 0, 0, .45);
-	height: 80px;
-	
+	background:rgba(0, 0, 0, .45);	
 }
+
+.nav-container {
+    display: flex!important;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo {
+    display: inline;
+    position: absolute;
+    top: 7px;
+}
+
+.logo h3 {
+    display: inline;
+    margin: 0;
+    line-height: 25px;
+}
+
+.logo #tempe {
+    font-size: 0.5em;
+    color: white;
+}
+
+.logo #suyud {
+    font-size: 0.8em;
+    font-family: 'Pacifico', cursive;
+    color: #e7a331
+
+}
+
 .navbar-default {
     background-color: transparent;
     border-color: transparent;
 }
 .container-fluid {
-    margin-top: 15px;
-
+    margin-top: 20px;
+    margin-bottom: 15px;
 }
 .main_menu_bg li a.booking{
 	border: 1px solid #fff;
@@ -633,6 +662,7 @@ a.navbar-brand.our_logo{
     color: #e7a331 !important;
     padding: 5px 10px;
     margin-top: 8px;
+    margin-left: 15px;
 }
 .main_menu_bg li a:hover.booking{
     color: #da9b31 !important;
@@ -654,7 +684,7 @@ a.navbar-brand.our_logo{
 /* slider section */
 
 .slider{
-	background:url(../images/bannerbg.jpg) center center no-repeat;
+	background:url(../images/title-bg.jpg) center center no-repeat;
 	background-size:cover;
 }
 .main_slider {

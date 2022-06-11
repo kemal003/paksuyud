@@ -29,7 +29,7 @@
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-		<div class='preloader'><div class='loaded'>&nbsp;</div></div>
+		{{-- <div class='preloader'><div class='loaded'>&nbsp;</div></div>
         <header id="home" class="navbar-fixed-top">
             <div class="header_top_menu clearfix">	
                 <div class="container">
@@ -56,7 +56,7 @@
 
                     </div>			
                 </div>
-            </div>
+            </div> --}}
 
             <!-- End navbar-collapse-->
 
@@ -76,16 +76,16 @@
                                 </div>
 
                                 <!-- Collect the nav links, forms, and other content for toggling -->
-                                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                                    <h1 style="display: inline">Pak Suyud</h1>
-                                    <ul class="nav navbar-nav navbar-right">
+                                <div class="nav-container collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                    <div class="logo">
+                                        <h3><span id="tempe">keripik tempe</span><br><span id="suyud">Pak Suyud</span></h3>
+                                    </div>
+                                    <ul class="nav navbar-nav navbar-right nav-custom">
                                         <li><a href="#slider">Home</a></li>
-                                        <li><a href="#abouts">Menu</a></li>
-                                        <li><a href="#features">Features</a></li>
-                                        <li><a href="#portfolio">Delivery</a></li>
-                                        <li><a href="#ourPakeg">News</a></li>
-                                        <li><a href="#mobaileapps">Pages</a></li>
-                                        <li><a href="#" class="booking">Table Booking</a></li>
+                                        <li><a href="#abouts">About</a></li>
+                                        <li><a href="#portfolio">Products</a></li>
+                                        <li><a href="#ourPakeg">Price List</a></li>
+                                        <li><a href="#" class="booking">Order Now</a></li>
                                     </ul>
                                 </div><!-- /.navbar-collapse -->
                             </div><!-- /.container-fluid -->
@@ -102,9 +102,9 @@
                         <div class="main_slider text-center">
                             <div class="col-md-12">
                                 <div class="main_slider_content wow zoomIn" data-wow-duration="1s">
-                                    <h1>Foody Love</h1>
+                                    <h1>Pak Suyud</h1>
                                     <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi. </p>
-                                    <button href="" class="btn-lg">Click here</button>
+                                    <button href="" class="btn-lg">See Our Products</button>
                                 </div>
                             </div>	
                         </div>
@@ -227,24 +227,6 @@
                                 <div class="single_pakeg_text">
                                     <div class="pakeg_title">
                                         <h4>Main course </h4>
-                                    </div>
-
-                                    <ul>
-                                        <li> Tuna Roast Source........................................................$24.5 </li>
-                                        <li> Tuna Roast Source........................................................$24.5 </li>
-                                        <li> Tuna Roast Source........................................................$24.5 </li>
-                                        <li> Tuna Roast Source........................................................$24.5 </li>
-                                        <li> Tuna Roast Source........................................................$24.5 </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="single_pakeg_three text-left wow rotateInDownRight">
-                            <div class="col-md-6 col-md-offset-6 col-sm-8 col-sm-offset-4">
-                                <div class="single_pakeg_text">
-                                    <div class="pakeg_title">
-                                        <h4>Desserts</h4>
                                     </div>
 
                                     <ul>
