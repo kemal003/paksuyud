@@ -687,9 +687,7 @@ a.navbar-brand.our_logo{
 	background:url(../images/title-bg.jpg) center center no-repeat;
 	background-size:cover;
 }
-.main_slider {
-	
-}
+
 .main_slider .main_slider_content h1{
 font-size: 6rem;
     font-family: 'Pacifico', cursive;
@@ -796,7 +794,7 @@ font-size: 6rem;
 
 .main_portfolio_content {
     display: inline-grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: auto auto;
 }
 
 .single_portfolio_text{
@@ -804,11 +802,24 @@ font-size: 6rem;
 	padding:0;
 	position:relative;
 	overflow:hidden;
+    margin: 0px 10px;
 
 }
 .single_portfolio_text img{
-	width:300px;
-    height: 290px;
+    width: 600px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.single_portfolio_text .desc{
+    background-color: #e7a331;
+    padding: 10px;
+}
+
+.single_portfolio_text h3{
+    text-align: left;
+    color: white;
+    font-weight: bolder;
 }
 
 .single_portfolio_text:hover .portfolio_images_overlay{
@@ -898,7 +909,10 @@ font-size: 6rem;
     background: url(../images/pkli.png) no-repeat left center;
     padding: 15px 0px 15px 60px;
     margin-top: 20px;
-	
+}
+
+.single_pakeg_text .price{
+    font-weight: 500;
 }
 
 /* Mobail Apps Section css */
