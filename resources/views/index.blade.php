@@ -103,8 +103,8 @@
                             <div class="col-md-12">
                                 <div class="main_slider_content wow zoomIn" data-wow-duration="1s">
                                     <h1>Pak Suyud</h1>
-                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi. </p>
-                                    <button href="" class="btn-lg">See Our Products</button>
+                                    <p>Berdiri sejak tahun 2000, Tempe Kripik Pak Suyud merupakans alah satu<br>jajanan khas asli Trenggalek yang masih produksi sampai saat ini </p>
+                                    <button href="" class="btn-lg">Lihat Produk Kami</button>
                                 </div>
                             </div>	
                         </div>
@@ -171,23 +171,22 @@
                     <div class="portfolio_content text-center  wow fadeIn" data-wow-duration="5s">
                         <div class="col-md-12">
                             <div class="head_title text-center">
-                                <h4>Delightful</h4>
-                                <h3>Experience</h3>
+                                <h4>Varian Rasa</h4>
+                                <h3>Keripik Tempe Pak Suyud</h3>
                             </div>
-
                             <div class="main_portfolio_content">
-                                @forelse ($items as $item)
                                 <div class="single_portfolio_text">
-                                    <img src="{{ asset($item->img_url) }}" alt="" />
-                                    <div class="portfolio_images_overlay text-center">
-                                        <h6>{{ $item->name}}</h6>
-                                        <p class="product_price">{{ 'Rp.'.$item->price }}</p>
-                                        <a href="" class="btn btn-primary">Click here</a>
+                                    <img src="{{ asset('images/items/keripik-tempe.jpg') }}" alt="" />
+                                    <div class="desc">
+                                        <h3>Bawang</h3>
                                     </div>
                                 </div>
-                                @empty
-                                    <h1>nothing available</h1>
-                                @endforelse
+                                <div class="single_portfolio_text">
+                                    <img src="{{ asset('images/items/keripik-tempe.jpg') }}" alt="" />
+                                    <div class="desc">
+                                        <h3>Daun Bawang</h3>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -200,23 +199,22 @@
                 <div class="main_pakeg_content">
                     <div class="row">
                         <div class="head_title text-center">
-                            <h4>Amazing</h4>
-                            <h3>Delicious</h3>
+                            <h4>Price List</h4>
+                            <h3>Keripik Tempe</h3>
                         </div>
 
                         <div class="single_pakeg_one text-right wow rotateInDownRight">
                             <div class="col-md-6 col-md-offset-6 col-sm-8 col-sm-offset-4">
                                 <div class="single_pakeg_text">
                                     <div class="pakeg_title">
-                                        <h4>Drinks</h4>
+                                        <h4>Keripik Tempe Bawang</h4>
                                     </div>
-
                                     <ul>
-                                        <li> Tuna Roast Source........................................................$24.5 </li>
-                                        <li> Tuna Roast Source........................................................$24.5 </li>
-                                        <li> Tuna Roast Source........................................................$24.5 </li>
-                                        <li> Tuna Roast Source........................................................$24.5 </li>
-                                        <li> Tuna Roast Source........................................................$24.5 </li>
+                                        @forelse ($kt_bawang as $item)
+                                        <li><span>{{ $item->name }}</span><br><span class="price">{{ 'Rp.'.$item->price }}</span></li>
+                                        @empty
+                                        <li>no item available</li>
+                                        @endforelse
                                     </ul>
                                 </div>
                             </div>
@@ -226,39 +224,16 @@
                             <div class="col-md-6 col-sm-8">
                                 <div class="single_pakeg_text">
                                     <div class="pakeg_title">
-                                        <h4>Main course </h4>
+                                        <h4>Keripik Tempe Daun Jeruk</h4>
                                     </div>
 
                                     <ul>
-                                        <li> Tuna Roast Source........................................................$24.5 </li>
-                                        <li> Tuna Roast Source........................................................$24.5 </li>
-                                        <li> Tuna Roast Source........................................................$24.5 </li>
-                                        <li> Tuna Roast Source........................................................$24.5 </li>
-                                        <li> Tuna Roast Source........................................................$24.5 </li>
+                                        @forelse ($kt_daunjeruk as $item)
+                                        <li><span>{{ $item->name }}</span><br><span class="price">{{ 'Rp.'.$item->price }}</span></li>
+                                        @empty
+                                        <li>no item available</li>
+                                        @endforelse
                                     </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="mobaileapps" class="mobailapps">
-            <div class="slider_overlay">
-                <div class="container">
-                    <div class="row">
-                        <div class="main_mobail_apps_content wow zoomIn">
-                            <div class="col-md-5 col-sm-12 text-center">
-                                <img src="{{ asset('images/iphone.png') }}" alt="" />
-                            </div>
-                            <div class="col-md-7 col-sm-12">
-                                <div class="single_monail_apps_text">
-                                    <h4> Happy to Announce </h4>
-                                    <h1>Mobile App <span>is Available in every OS platform.</span></h1>
-
-                                    <a href=""><img src="{{ asset('images/google.png') }}" alt="" /></a>
-                                    <a href=""><img src="{{ asset('images/apps.png') }}" alt="" /></a>
                                 </div>
                             </div>
                         </div>
@@ -344,21 +319,6 @@
                 </div>
             </div>
         </section>
-
-
-
-        <!--Footer-->
-        <footer id="footer" class="footer">
-            <div class="container text-center">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <div class="copyright wow zoomIn" data-wow-duration="3s">
-							<p>Made with <i class="fa fa-heart"></i> by <a href="http://bootstrapthemes.co">Bootstrap Themes</a>2016. All Rights Reserved</p>
-						</div>
-                    </div>
-                </div>
-            </div>
-        </footer>
 		
 		<div class="scrollup">
 			<a href="#"><i class="fa fa-chevron-up"></i></a>
