@@ -16,8 +16,9 @@ use App\Http\Controllers\ItemController;
 
 Route::get('/', [ItemController::class, 'index']);
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth'])->name('dashboard');
+Route::group(['middleware' => ['auth']], function() {
+    Route::get('/dashboard', [ItemController::class, 'showItem'])->name('dashboard');
+    Route::get('/input', [ItemController::class, 'inputItem'])->name('input');
+});
 
 require __DIR__.'/auth.php';
