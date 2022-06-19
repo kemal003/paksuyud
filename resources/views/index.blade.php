@@ -3,10 +3,11 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Food and Restorent One page Template</title>
+        <title>Tempe Keripik Pak Suyud</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('images/items/favicon.ico') }}">
 
         <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
         <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
@@ -82,9 +83,9 @@
                                     </div>
                                     <ul class="nav navbar-nav navbar-right nav-custom">
                                         <li><a href="#slider">Home</a></li>
-                                        <li><a href="#abouts">About</a></li>
-                                        <li><a href="#portfolio">Products</a></li>
-                                        <li><a href="#ourPakeg">Price List</a></li>
+                                        <li><a href="#abouts">Tentang</a></li>
+                                        <li><a href="#portfolio">Produk</a></li>
+                                        <li><a href="#ourPakeg">Harga</a></li>
                                         <li><a href="#" class="booking">Order Now</a></li>
                                     </ul>
                                 </div><!-- /.navbar-collapse -->
@@ -103,7 +104,7 @@
                             <div class="col-md-12">
                                 <div class="main_slider_content wow zoomIn" data-wow-duration="1s">
                                     <h1>Pak Suyud</h1>
-                                    <p>Berdiri sejak tahun 2000, Tempe Kripik Pak Suyud merupakans alah satu<br>jajanan khas asli Trenggalek yang masih produksi sampai saat ini </p>
+                                    <p>Berdiri sejak tahun 2000, Tempe Kripik Pak Suyud merupakan salah satu<br>jajanan khas asli Trenggalek yang masih produksi sampai saat ini </p>
                                     <button href="" class="btn-lg">Lihat Produk Kami</button>
                                 </div>
                             </div>	
@@ -120,17 +121,16 @@
                     <div class="abouts_content">
                         <div class="col-md-6">
                             <div class="single_abouts_text text-center wow slideInLeft" data-wow-duration="1s">
-                                <img src="{{ asset('images/ab.png') }}" alt="" />
+                                <img src="https://i.ibb.co/Fbt908p/Front-look.jpg" alt="Front-look" border="0">
                             </div>
                         </div>
 
                         <div class="col-md-6">
                             <div class="single_abouts_text wow slideInRight" data-wow-duration="1s">
-                                <h4>About us</h4>
-                                <h3>WE ARE TASTY</h3>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's stan</p>
+                                <h4>Tentang kami</h4>
+                                <p>Berdiri sejak tahun 2000, Tempe Kripik Pak Suyud merupakan salah satu jajanan khas asli Trenggalek yang masih produksi sampai saat ini</p>
 
-                                <p>dard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesettingdard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting</p>
+                                <p>Selain tempe kripik yang memiliki cita rasa yang enak dan gurih, Pak suyud juga menyediakan makanan khas trenggalek lainnya seperti alen-alen dan manco</p>
 
                                 <a href="" class="btn btn-primary">click here</a>
                             </div>
@@ -149,13 +149,17 @@
                                 <div class="main_features_content text-left">
                                     <div class="col-md-6">
                                         <div class="single_features_text">
-                                            <h4>Special Recipes</h4>
-                                            <h3>Taste of Precious</h3>
-                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's stan</p>
-                                            <p>dard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesettingdard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting</p>
+                                            <h4>Lokasi</h4>
+                                            <h3>Selalu Buka</h3>
+                                            <p>Tempe Kripik Pak Suyud terletak di pusat kota, 10 menit dari pusat Alun-Alun Kabupaten Trenggalek</p>
+                                            <p>Pak Suyud memiliki lokasi strategis dan mudah terjangkau, cocok untuk para pendatang dari luar kota yang ingin mampir untuk membeli oleh-oleh khas Trenggalek di sini. Tentunya dengan harga dan kualitas yang bersaing</p>
 
                                             <a href="" class="btn btn-primary">click here</a>
                                         </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2025400.5419971854!2d110.33900597820785!3d-7.480659858298715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e79050d44ae9ae5%3A0x7a420c58766ccfdd!2sKripik%20Tempe%20Pak%20Suyud!5e0!3m2!1sid!2sid!4v1655669426655!5m2!1sid!2sid" width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                                     </div>
                                 </div>
                             </div>
@@ -173,18 +177,22 @@
                             <div class="head_title text-center">
                                 <h4>Varian Rasa</h4>
                                 <h3>Keripik Tempe Pak Suyud</h3>
+                                <p>Usaha Keripik tempe pak suyud menyediakan dua varian rasa yaitu keripik tepe varian daun jeruk
+                                yang memiliki aroma daun jeruk <br> yang khas
+                                    Sedangkan untuk keripik tempe bawang memiliki rasa yang gurih khas bawang.
+                                    Kedua keripik tersebut bertekstur renyah.</p>
                             </div>
                             <div class="main_portfolio_content">
                                 <div class="single_portfolio_text">
-                                    <img src="{{ asset('images/items/keripik-tempe.jpg') }}" alt="" />
+                                <img src="https://i.ibb.co/gRNf198/Tempe-Kotak.jpg" alt="Tempe-Kotak" border="0">
                                     <div class="desc">
                                         <h3>Bawang</h3>
                                     </div>
                                 </div>
                                 <div class="single_portfolio_text">
-                                    <img src="{{ asset('images/items/keripik-tempe.jpg') }}" alt="" />
+                                <img src="https://i.ibb.co/gRNf198/Tempe-Kotak.jpg" alt="Tempe-Kotak" border="0">
                                     <div class="desc">
-                                        <h3>Daun Bawang</h3>
+                                        <h3>Daun Jeruk</h3>
                                     </div>
                                 </div>
                             </div>
@@ -246,17 +254,16 @@
             <div class="container">
                 <div class="row">
                     <div class="footer_widget_content text-center">
-                        <div class="col-md-4">
+                        <div class="col-md-6">
                             <div class="single_widget wow fadeIn" data-wow-duration="2s">
-                                <h3>Take it easy with location</h3>
+                                <h3>Alamat</h3>
 
                                 <div class="single_widget_info">
-                                    <p>112-Legere ancillae vix ne.
+                                    <p>Jl. Yos Sudarso No.69,
 
-                                        <span>Te elit putent propriae eum,</span>
-                                        <span>aliquip nominati</span>
-                                        <span class="phone_email">phone: 00 000 000</span>
-                                        <span>Email: support@templatemela.com</span></p>
+                                        <span>Sosutan, Ngantru, Kec. Trenggalek,</span>
+                                        <span>Kabupaten Trenggalek, Jawa Timur 66311</span>
+                                        <span class="phone_email">Kontak (WA): 089516592375</span>
                                 </div>
 
                                 <div class="footer_socail_icon">
@@ -272,23 +279,18 @@
                             </div>
                         </div>
 
-                        <div class="col-md-4">
+                        <div class="col-md-6">
                             <div class="single_widget wow fadeIn" data-wow-duration="4s">
-                                <h3>Take it easy with location</h3>
+                                <h3>Jam Operasional</h3>
 
                                 <div class="single_widget_info">
-                                    <p><span class="date_day">Monday To Friday</span>
-                                        <span>8:00am to 10:00pm(Breakfast)</span>
-                                        <span>11:00am to 10:00pm(Lunch/Diner)</span>
-
-                                        <span class="date_day">Saturday & Sunday</span>
-                                        <span>10:00am to 11:00pm(Brunch)</span>
-                                        <span>11:00am to 12:00pm(Lunch/Dinner)</span></p>
+                                    <p><span class="date_day">Setiap Hari (Senin - Minggu)</span>
+                                        <span>08:00 - 21:00</span>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="col-md-4">
+                        <!-- <div class="col-md-4">
                             <div class="single_widget wow fadeIn" data-wow-duration="5s">
                                 <h3>Take it easy with location</h3>
 
@@ -304,7 +306,7 @@
 
                                         <div class="form-group">
                                             <input type="text" class="form-control" placeholder="Subject">
-                                        </div> <!-- end of form-group -->
+                                        </div>
 
                                         <div class="form-group">
                                             <textarea class="form-control" name="message" rows="3" placeholder="Message"></textarea>
@@ -314,7 +316,7 @@
                                     </form>	
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
