@@ -2,7 +2,23 @@
  jQuery;
  */
 
-"use strict";
+
+let galleryItem = document.querySelectorAll(".gallery-item");
+console.log(galleryItem);
+let galleryItemArr = Array.from(galleryItem);
+console.log(galleryItemArr);
+
+function expand(index) {
+	galleryItemArr[index].style = "flex-grow: 5";
+	for (let i = 0; i<4; i++) {
+		if (i != index) {
+			galleryItemArr[i].style = "flex-shrink: 5";
+		} 
+	}
+}
+
+expand(1);
+
 
 
 jQuery(document).ready(function ($) {

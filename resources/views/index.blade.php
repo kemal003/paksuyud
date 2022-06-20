@@ -104,7 +104,7 @@
                                 <div class="main_slider_content wow zoomIn" data-wow-duration="1s">
                                     <h1>Pak Suyud</h1>
                                     <p>Berdiri sejak tahun 2000, Tempe Kripik Pak Suyud merupakans alah satu<br>jajanan khas asli Trenggalek yang masih produksi sampai saat ini </p>
-                                    <button href="" class="btn-lg">Lihat Produk Kami</button>
+                                    <button class="btn-lg"><a href="#portfolio">Lihat Produk Kami</a></button>
                                 </div>
                             </div>	
                         </div>
@@ -120,19 +120,18 @@
                     <div class="abouts_content">
                         <div class="col-md-6">
                             <div class="single_abouts_text text-center wow slideInLeft" data-wow-duration="1s">
-                                <img src="{{ asset('images/ab.png') }}" alt="" />
+                                <img src="{{ asset('images/aboutus.jpeg') }}" alt="" />
                             </div>
                         </div>
 
                         <div class="col-md-6">
                             <div class="single_abouts_text wow slideInRight" data-wow-duration="1s">
                                 <h4>About us</h4>
-                                <h3>WE ARE TASTY</h3>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's stan</p>
+                                <h3>PAK SUYUD</h3>
+                                <p>Pak suyud menyediakan makanan khas trenggalek yaitu keripik tempe yang memiliki cita rasa yang enak dan gurih</p>
+                                <p>Usaha Keripik tempe pak suyud menyediakan dua varian rasa yaitu keripik tepe varian daun jeruk yang memiliki aroma daun jeruk yang khas.  Sedangkan untuk keripik tempe bawang memiliki rasa yang gurih khas bawang.  Kedua keripik tersebut bertekstur renyah</p>
 
-                                <p>dard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesettingdard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting</p>
-
-                                <a href="" class="btn btn-primary">click here</a>
+                                <a href="#portfolio" class="btn btn-primary">Produk Kami</a>
                             </div>
                         </div>
                     </div>
@@ -145,18 +144,19 @@
                 <div class="container">
                     <div class="row">
                         <div class="main_features_content_area  wow fadeIn" data-wow-duration="3s">
-                            <div class="col-md-12">
-                                <div class="main_features_content text-left">
-                                    <div class="col-md-6">
-                                        <div class="single_features_text">
-                                            <h4>Special Recipes</h4>
-                                            <h3>Taste of Precious</h3>
-                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's stan</p>
-                                            <p>dard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesettingdard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting</p>
-
-                                            <a href="" class="btn btn-primary">click here</a>
-                                        </div>
-                                    </div>
+                            <h4>Etalase</h4>
+                            <div class="gallery">
+                                <div class="gallery-item">
+                                    <img onclick="expand(0)" src="{{ asset('images/produk1.jpeg') }}" alt="">
+                                </div>
+                                <div class="gallery-item">
+                                    <img onclick="expand(1)" src="{{ asset('images/produk3.jpeg') }}" alt="">
+                                </div>
+                                <div class="gallery-item">
+                                    <img onclick="expand(2)" src="{{ asset('images/produk2.jpeg') }}" alt="">
+                                </div>
+                                <div class="gallery-item">
+                                    <img onclick="expand(3)" src="{{ asset('images/produk4.jpeg') }}" alt="">
                                 </div>
                             </div>
                         </div>
@@ -176,17 +176,20 @@
                             </div>
                             <div class="main_portfolio_content">
                                 <div class="single_portfolio_text">
-                                    <img src="{{ asset('images/items/keripik-tempe.jpg') }}" alt="" />
+                                    <img src="{{ asset('images/bawang.png') }}" alt="" />
                                     <div class="desc">
                                         <h3>Bawang</h3>
                                     </div>
                                 </div>
                                 <div class="single_portfolio_text">
-                                    <img src="{{ asset('images/items/keripik-tempe.jpg') }}" alt="" />
+                                    <img src="{{ asset('images/daunjeruk.png') }}" alt="" />
                                     <div class="desc">
-                                        <h3>Daun Bawang</h3>
+                                        <h3>Daun Jeruk</h3>
                                     </div>
                                 </div>
+                            </div>
+                            <div class="order text-center">
+                                <a href="">Pesan Sekarang</a>
                             </div>
                         </div>
                     </div>
@@ -237,84 +240,46 @@
                                 </div>
                             </div>
                         </div>
+
+                        @if(count($others) != 0)
+                        <div class="single_pakeg_three text-right wow rotateInDownRight">
+                            <div class="col-md-6 col-md-offset-6 col-sm-8 col-sm-offset-4">
+                                <div class="single_pakeg_text">
+                                    <div class="pakeg_title">
+                                        <h4>Produk Lain</h4>
+                                    </div>
+                                    <ul>
+                                        @foreach ($others as $item)
+                                        <li><span>{{ $item->name }}</span><br><span class="price">{{ 'Rp.'.$item->price }}</span></li>
+                                        @endforeach
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        @endif
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="footer_widget" class="footer_widget">
-            <div class="container">
-                <div class="row">
-                    <div class="footer_widget_content text-center">
-                        <div class="col-md-4">
-                            <div class="single_widget wow fadeIn" data-wow-duration="2s">
-                                <h3>Take it easy with location</h3>
-
-                                <div class="single_widget_info">
-                                    <p>112-Legere ancillae vix ne.
-
-                                        <span>Te elit putent propriae eum,</span>
-                                        <span>aliquip nominati</span>
-                                        <span class="phone_email">phone: 00 000 000</span>
-                                        <span>Email: support@templatemela.com</span></p>
-                                </div>
-
-                                <div class="footer_socail_icon">
-                                    <a href=""><i class="fa fa-facebook"></i></a>
-                                    <a href=""><i class="fa fa-google-plus"></i></a>
-                                    <a href=""><i class="fa fa-twitter"></i></a>
-                                    <a href=""><i class="fa fa-linkedin"></i></a>
-                                    <a href=""><i class="fa fa-pinterest-p"></i></a>
-                                    <a href=""><i class="fa fa-youtube"></i></a>
-                                    <a href=""><i class="fa fa-phone"></i></a>
-                                    <a href=""><i class="fa fa-camera"></i></a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-4">
-                            <div class="single_widget wow fadeIn" data-wow-duration="4s">
-                                <h3>Take it easy with location</h3>
-
-                                <div class="single_widget_info">
-                                    <p><span class="date_day">Monday To Friday</span>
-                                        <span>8:00am to 10:00pm(Breakfast)</span>
-                                        <span>11:00am to 10:00pm(Lunch/Diner)</span>
-
-                                        <span class="date_day">Saturday & Sunday</span>
-                                        <span>10:00am to 11:00pm(Brunch)</span>
-                                        <span>11:00am to 12:00pm(Lunch/Dinner)</span></p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-4">
-                            <div class="single_widget wow fadeIn" data-wow-duration="5s">
-                                <h3>Take it easy with location</h3>
-
-                                <div class="single_widget_form text-left">
-                                    <form action="#" id="formid">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" name="name" placeholder="first name" required="">
-                                        </div>
-
-                                        <div class="form-group">
-                                            <input type="email" class="form-control" name="email" placeholder="Email" required="">
-                                        </div>
-
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Subject">
-                                        </div> <!-- end of form-group -->
-
-                                        <div class="form-group">
-                                            <textarea class="form-control" name="message" rows="3" placeholder="Message"></textarea>
-                                        </div>
-
-                                        <input type="submit" value="click here" class="btn btn-primary">
-                                    </form>	
-                                </div>
-                            </div>
-                        </div>
+        <section class="footer">
+            <div class="footer-row">
+                <div class="column logo">
+                    <h3>Keripik Tempe</h3>
+                    <h1>Pak Suyud</h1>
+                    
+                </div>
+                <div class="column location">
+                    <h3>Alamat</h3>
+                    <p>Jl. Yos Sudarso No.69, Sosutan, Ngantru,<br>Kec. Trenggalek, Kabupaten Trenggalek,<br>Jawa Timur 66311</p>
+                </div>
+                <div class="column hours">
+                    <h3>Jam Buka</h3>
+                    <p>Buka Setiap Hari<br>08:00 - 21:00</p>
+                    <div class="footer_socail_icon">
+                        <a href=""><i class="fa fa-facebook"></i></a>
+                        <a href=""><i class="fa fa-instagram"></i></a>
+                        <a href=""><i class="fa fa-twitter"></i></a>
                     </div>
                 </div>
             </div>

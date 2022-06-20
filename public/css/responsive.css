@@ -18,17 +18,7 @@ h1{font-size:90%;}
     padding: 5px 0px 5px 60px;
     margin-top: 15px;
 }
-.single_monail_apps_text {
-    margin-top: 40px;
-}
 
-.main_mobail_apps_content img{
-    text-align: right;
-}
-
-.single_monail_apps_text a{
-    margin-right:5px;
-}
 .main_menu_bg a.navbar-brand.our_logo{
 	top: -77px;
 	width: 40%;
@@ -38,6 +28,19 @@ h1{font-size:90%;}
     width: 35%;
 }
 
+.features .gallery {
+    flex-direction: column;
+    height: 900px;
+}
+
+.features .gallery .gallery-item {
+    height: 10vh;
+}
+
+.features .gallery img{
+    width: 600px;
+    height: 100%;
+}
 	
 }
 
@@ -46,10 +49,10 @@ h1{font-size:90%;}
 
 @media (max-width:768px){
 
-.main_menu_bg a.navbar-brand.our_logo{
+/* .main_menu_bg a.navbar-brand.our_logo{
     top: -78px;
     width: 35%;
-}
+} */
 	
 .single_monail_apps_text {
     margin-top: 40px;
@@ -77,15 +80,46 @@ h1{font-size:90%;}
     margin-top: 14px;
 }
 
+.features .gallery {
+    flex-direction: column;
+    height: 900px;
+}
+
+.features .gallery .gallery-item {
+    height: 10vh;
+}
+
+.features .gallery img{
+    width: 400px;
+    height: 100%;
+}
+
+.footer {
+    padding: 30px 10vw;
+}
+
+.footer .logo h3{
+    font-size: 2em;
+    margin-bottom: 0px;
+}
+
+.footer .logo h1 {
+    font-size: 4em;
+}
+
+.single_portfolio_text .desc h3 {
+    font-size: 2em;
+}
 
 }
 
 
-@media screen (min-width:320px) and (max-width:480px){
+@media (min-width:320px) and (max-width:480px){
 
 .header_top_menu .call_us_text{
-	display:none !important;
+	display:none;
 }
+
 .main_menu_bg a.navbar-brand.our_logo{
     top: -78px;
     width: 35%;
