@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Food and Restorent One page Template</title>
+        <title>Keripik Tempe Pak Suyud</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -29,35 +29,8 @@
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-		{{-- <div class='preloader'><div class='loaded'>&nbsp;</div></div>
-        <header id="home" class="navbar-fixed-top">
-            <div class="header_top_menu clearfix">	
-                <div class="container">
-                    <div class="row">	
-                        <div class="col-md-5 col-md-offset-3 col-sm-12 text-right">
-                            <div class="call_us_text">
-								<a href=""><i class="fa fa-clock-o"></i> Order Foods 24/7</a>
-								<a href=""><i class="fa fa-phone"></i>061 9876 5432</a>
-							</div>
-                        </div>
-
-                        <div class="col-md-4 col-sm-12">
-                            <div class="head_top_social text-right">
-                                <a href=""><i class="fa fa-facebook"></i></a>
-                                <a href=""><i class="fa fa-google-plus"></i></a>
-                                <a href=""><i class="fa fa-twitter"></i></a>
-                                <a href=""><i class="fa fa-linkedin"></i></a>
-                                <a href=""><i class="fa fa-pinterest-p"></i></a>
-                                <a href=""><i class="fa fa-youtube"></i></a>
-                                <a href=""><i class="fa fa-phone"></i></a>
-                                <a href=""><i class="fa fa-camera"></i></a>
-                            </div>	
-                        </div>
-
-                    </div>			
-                </div>
-            </div> --}}
-
+		<div class='preloader'><div class='loaded'>&nbsp;</div></div>
+        <header id="home">
             <!-- End navbar-collapse-->
 
             <div class="main_menu_bg">
@@ -85,7 +58,7 @@
                                         <li><a href="#abouts">About</a></li>
                                         <li><a href="#portfolio">Products</a></li>
                                         <li><a href="#ourPakeg">Price List</a></li>
-                                        <li><a href="#" class="booking">Order Now</a></li>
+                                        <li><a href="/orderForm" class="booking">Order Now</a></li>
                                     </ul>
                                 </div><!-- /.navbar-collapse -->
                             </div><!-- /.container-fluid -->
@@ -189,7 +162,7 @@
                                 </div>
                             </div>
                             <div class="order text-center">
-                                <a href="">Pesan Sekarang</a>
+                                <a href="/orderForm">Pesan Sekarang</a>
                             </div>
                         </div>
                     </div>

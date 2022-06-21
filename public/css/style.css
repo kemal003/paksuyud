@@ -912,13 +912,16 @@ font-size: 6rem;
 
 .portfolio .order a{
     padding: 10px 20px;
-    background-color: #da9b31;
+    background-color: #ecaf45;
     color: #fff;
     border-radius: 8px;
     font-size: 2em;
     font-weight: 500;
 }
 
+.portfolio .order a:hover {
+    background-color: #d6a041;
+}
 
 
 
@@ -981,59 +984,6 @@ font-size: 6rem;
 
 .single_pakeg_text .price{
     font-weight: 500;
-}
-
-/* Mobail Apps Section css */
-
-.mobailapps{
-	background:url(../images/appsbg.jpg) top center no-repeat scroll;
-	-moz-background-size: cover;
-	-webkit-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	width: 100%;
-	overflow: hidden;
-	position:relative;
-}
-
-.main_mobail_apps_content{
-    margin: 80px 0px;
-    color: #fff;
-    overflow: hidden;
-}
-
-.single_monail_apps_text{
-	margin-top:120px;
-}
-.single_monail_apps_text h4{
-	font-size:1.875rem;
-	margin-bottom:30px;
-}
-
-.single_monail_apps_text h1{
-    font-size: 5rem;
-    text-transform: uppercase;
-    color: #fff;
-    line-height: 5rem;
-
-}
-.single_monail_apps_text h1 span{
-	font-size:1.800rem;
-	color:#fff;
-	display:block;
-	
-}
-
-.single_monail_apps_text{
-    margin-left:-10px;
-}
-.single_monail_apps_text a{
-	margin-top:50px;
-	margin-left:10px;
-	display:inline-block;
-}
-.single_monail_apps_text a img{
-	max-width:90%;
 }
 
 /* Footer Section CSS */
@@ -1186,4 +1136,37 @@ font-size: 6rem;
 	margin-left: -6px;
 	text-decoration: none;
 
+}
+
+.form-container {
+    background-color: #fff;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-container h3{
+    font-family: 'Pacifico', cursive;
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.form-container form{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    box-shadow: 5px 10px 20px #00000017;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.form-container form label{
+    margin-bottom: 2px;
+}
+
+.form-container form input{
+    width: 300px;
+    margin-bottom: 10px;
 }
