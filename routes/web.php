@@ -15,7 +15,8 @@ use App\Http\Controllers\ItemController;
 */
 
 Route::get('/', [ItemController::class, 'index']);
-Route::view('orderForm', 'orderForm');
+Route::get('/orderForm', [ItemController::class, 'orderForm']);
+Route::post('/processForm', [ItemController::class, 'processForm'])->name('submit.form');
 
 Route::group(['middleware' => ['auth']], function() {
     Route::get('/dashboard', [ItemController::class, 'showItem'])->name('dashboard');

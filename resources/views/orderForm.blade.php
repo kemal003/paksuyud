@@ -94,20 +94,45 @@
             </div>
 
         </header> <!-- End Header Section -->
+        <main class="forms">
 
-        <section class="form-container">
             <h3>Form Pemesanan</h3>
-            <div class="form">
-                <form action="">
-                    <label for="name">Nama</label>
-                    <input name="name" type="text">
-                    <label for="phone">Nomor Telefon</label>
-                    <input name="phone" type="tel">
-                    <label for="address">Alamat Pengiriman</label>
-                    <textarea name="address" style="resize: none" id="" cols="30" rows="3"></textarea>
-                </form>
-            </div>
-        </section>
+    
+            <section class="form-container" id="buyer-form">
+                <div class="form" id="item-form">
+                    <form action="{{ route('submit.form') }}" method="POST">
+                    @csrf
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Item</th>
+                                    <th>harga</th>
+                                    <th>Jumlah</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach ($items as $item)
+                                <tr>
+                                    <td>{{$item->name}}</td>
+                                    <td>{{$item->price}}</td>
+                                    <td><input type="number" name="{{$item->id}}" id="" value="0" min="0"></td>
+                                </tr>
+                                @endforeach
+                            </tbody>
+                        </table>
+                        <label for="name">Nama</label>
+                        <input name="name" type="text">
+                        <label for="phone">Nomor Telefon</label>
+                        <input name="phone" type="tel">
+                        <label for="address">Alamat Pengiriman</label>
+                        <textarea name="address" style="resize: none" id="" cols="30" rows="3"></textarea>
+                        <input type="submit" value="submit">
+                    </form>
+                </div>
+            </section>
+
+        </main>
+ 
 
 
         <script src="{{ asset('js/vendor/jquery-1.11.2.min.js') }}"></script>

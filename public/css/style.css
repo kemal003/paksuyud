@@ -1138,8 +1138,9 @@ font-size: 6rem;
 
 }
 
-.form-container {
-    background-color: #fff;
+
+.forms {
+    background-color: white;
     height: 90vh;
     display: flex;
     flex-direction: column;
@@ -1147,11 +1148,32 @@ font-size: 6rem;
     justify-content: center;
 }
 
-.form-container h3{
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.forms h3{
     font-family: 'Pacifico', cursive;
     font-size: 2em;
     margin-bottom: 30px;
+    text-align: center;
 }
+
+.forms form td,th {
+    padding: 0px 10px;
+}
+
+.forms form thead th {
+    padding-bottom: 10px;
+}
+
+.forms table {
+    margin-bottom: 20px;
+}
+
 
 .form-container form{
     display: flex;
@@ -1160,6 +1182,7 @@ font-size: 6rem;
     box-shadow: 5px 10px 20px #00000017;
     padding: 20px;
     border-radius: 10px;
+    text-align: left;
 }
 
 .form-container form label{
@@ -1167,6 +1190,14 @@ font-size: 6rem;
 }
 
 .form-container form input{
-    width: 300px;
+    width: 100%;
     margin-bottom: 10px;
+}
+
+.form-container form input[type=number]{
+    width: 50px;
+}
+
+.form-container form input[type=submit]{
+    margin-top: 10px;
 }
