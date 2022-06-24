@@ -20,7 +20,6 @@ function expand(index) {
 expand(1);
 
 
-
 jQuery(document).ready(function ($) {
 
 	$(window).load(function () {
