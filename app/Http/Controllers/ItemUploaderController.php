@@ -22,7 +22,7 @@ class ItemUploaderController extends Controller
 
         $img_url = time().'.'.$request->image->extension();  
      
-        $request->image->move(public_path('images'), $img_url);
+        $request->image->storeAs('public/images', $img_url);
 
         /* Store $imageName name in DATABASE from HERE */
         $data = array(

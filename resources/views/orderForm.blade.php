@@ -112,7 +112,7 @@
                             </thead>
                             <tbody>
                                 @foreach ($items as $item)
-                                <tr>
+                                <tr class="item-order">
                                     <td>{{$item->name}}</td>
                                     <td>{{$item->price}}</td>
                                     <td><input type="number" name="{{$item->id}}" id="" value="0" min="0"></td>
@@ -122,7 +122,7 @@
                         </table>
                         <label for="name">Nama</label>
                         <input name="name" type="text">
-                        <label for="phone">Nomor Telefon</label>
+                        <label for="phone">Nomor Telepon</label>
                         <input name="phone" type="tel">
                         <label for="address">Alamat Pengiriman</label>
                         <textarea name="address" style="resize: none" id="" cols="30" rows="3"></textarea>

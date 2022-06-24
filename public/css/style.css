@@ -1201,3 +1201,7 @@ font-size: 6rem;
 .form-container form input[type=submit]{
     margin-top: 10px;
 }
+
+.item-order {
+    padding: 10px;
+}

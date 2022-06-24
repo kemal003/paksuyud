@@ -32,7 +32,12 @@
                     <tr>
                         <td>{{$item['id']}}</td>
                         <td>{{$item['name']}}</td>
-                        <td>{{$item['img_url']}}</td>
+                        <!-- <?php 
+                            // $img_url = $item['img_url'];
+                            // echo $img_url;
+                            // echo "<td><img src='{ asset('storage/images/$img_url') }}'><p>$img_url</p></td>";
+                        ?> -->
+                        <td>url({{ URL::asset('storage/images/1656054901.png') }})</td>
                         <td>{{$item['price']}}</td>
                         <td>{{$item['category']}}</td>
                         <td>{{$item['available']}}</td>

@@ -76,7 +76,7 @@
                             <div class="col-md-12">
                                 <div class="main_slider_content wow zoomIn" data-wow-duration="1s">
                                     <h1>Pak Suyud</h1>
-                                    <p>Berdiri sejak tahun 2000, Tempe Kripik Pak Suyud merupakans alah satu<br>jajanan khas asli Trenggalek yang masih produksi sampai saat ini </p>
+                                    <p>Berdiri sejak tahun 2000, Tempe Kripik Pak Suyud merupakan salah satu<br>jajanan khas asli Trenggalek yang masih produksi sampai saat ini </p>
                                     <button class="btn-lg"><a href="#portfolio">Lihat Produk Kami</a></button>
                                 </div>
                             </div>	
@@ -245,15 +245,16 @@
                 <div class="column location">
                     <h3>Alamat</h3>
                     <p>Jl. Yos Sudarso No.69, Sosutan, Ngantru,<br>Kec. Trenggalek, Kabupaten Trenggalek,<br>Jawa Timur 66311</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15801.944826276624!2d111.69425!3d-8.0517844!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e79050d44ae9ae5%3A0x7a420c58766ccfdd!2sKripik%20Tempe%20Pak%20Suyud!5e0!3m2!1sid!2sid!4v1656046693109!5m2!1sid!2sid" width="auto" height="auto" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
                 <div class="column hours">
                     <h3>Jam Buka</h3>
                     <p>Buka Setiap Hari<br>08:00 - 21:00</p>
-                    <div class="footer_socail_icon">
+                    <!-- <div class="footer_socail_icon">
                         <a href=""><i class="fa fa-facebook"></i></a>
                         <a href=""><i class="fa fa-instagram"></i></a>
                         <a href=""><i class="fa fa-twitter"></i></a>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </section>
