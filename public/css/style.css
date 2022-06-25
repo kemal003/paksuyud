@@ -623,6 +623,7 @@ a.navbar-brand.our_logo{
     display: flex!important;
     flex-direction: row;
     align-items: center;
+    padding-bottom: 20px
 }
 
 .nav-container .logo {
@@ -655,8 +656,9 @@ a.navbar-brand.our_logo{
 }
 .container-fluid {
     margin-top: 20px;
-    margin-bottom: 15px;
+    height: 65px;
 }
+
 .main_menu_bg li a.booking{
 	border: 1px solid #fff;
     border-radius: 4px;

@@ -77,7 +77,7 @@
                                 <!-- Collect the nav links, forms, and other content for toggling -->
                                 <div class="nav-container collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                                     <div class="logo">
-                                        <h3><span id="tempe">keripik tempe</span><br><span id="suyud">Pak Suyud</span></h3>
+                                        <a href="/"><h3><span id="tempe">keripik tempe</span><br><span id="suyud">Pak Suyud</span></h3></a>
                                     </div>
                                     <ul class="nav navbar-nav navbar-right nav-custom">
                                         <li><a href="/">Home</a></li>
