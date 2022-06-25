@@ -51,20 +51,20 @@ class ItemController extends Controller
         for ($i = 0; $i < count($ordered); $i = $i + 3) {
             $itemName = Item::where('id', $ordered[$i])->value('name');
             //ItemController::debugThis($itemName);
-            $orders = $orders . $itemName . PHP_EOL;
+            $orders = $orders . $ordered[$i + 2] . ' x ' . $itemName . PHP_EOL;
             $total = $total += ($ordered[$i + 2] * $ordered[$i + 1]);
         }
 
         $total = strval($total);
         $orderString =  "Nama    : " . $name . PHP_EOL.
                         "Kontak  : " . $phone . PHP_EOL.
-                        "alamat  : " . $address . PHP_EOL. PHP_EOL .
+                        "Alamat  : " . $address . PHP_EOL. PHP_EOL .
                         "Pesanan : " . PHP_EOL . $orders . PHP_EOL .
                         "Total   : Rp." . $total;
 
         $orderString = urlencode($orderString);
         
-        echo '<script>window.open("https://wa.me/6287755333890?text='.$orderString.'");</script>';
+        echo '<script>window.open("https://wa.me/6289516592375?text='.$orderString.'");</script>';
         echo '<script>alert("Terima kasih atas pemesanan anda. Mohon tunggu konfirmasi melalui Whatsapp")</script>';
         return ItemController::index();
     }

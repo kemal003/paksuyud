@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ItemController;
+use App\Http\Controllers\ItemUploaderController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,6 +22,7 @@ Route::post('/processForm', [ItemController::class, 'processForm'])->name('submi
 Route::group(['middleware' => ['auth']], function() {
     Route::get('/dashboard', [ItemController::class, 'showItem'])->name('dashboard');
     Route::get('/input', [ItemController::class, 'inputItem'])->name('input');
+    Route::post('/input', [ItemUploaderController::class, 'itemsUploadPost'])->name('itemUpload');
 });
 
 require __DIR__.'/auth.php';
